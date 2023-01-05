@@ -1,24 +1,51 @@
-# README
+# Tailwind CSS with Rails bug
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
 
-Things you may want to cover:
+### Clone the repository
 
-* Ruby version
+```shell
+git clone git@github.com:thisisrishabh22/tailwind-rails-bug.git
+cd tailwind-rails-bug
+```
 
-* System dependencies
+### Check your Ruby version
 
-* Configuration
+```shell
+ruby -v
+```
 
-* Database creation
+The ouput should start with something like `ruby 3.0.1`
 
-* Database initialization
+If not,
+<br/>
+Install the right ruby version using [rbenv](https://github.com/rbenv/rbenv):
 
-* How to run the test suite
+```shell
+rbenv install 3.0.1
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Install the right ruby version using [rvm](https://github.com/rvm/rvm):
 
-* Deployment instructions
+```shell
+rvm install 3.0.1
+```
 
-* ...
+### Install the missing gems:
+
+```shell
+bundle install
+```
+
+### Initialize the database
+
+```shell
+rails db:create
+rails db:migrate
+```
+
+## Serve
+
+```shell
+rails s
+```
